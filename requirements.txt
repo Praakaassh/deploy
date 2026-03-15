@@ -1,0 +1,15 @@
+flask
+flask-cors
+google-genai
+earthengine-api
+geopy
+python-dotenv
+gunicorn
+rasterio
+numpy
+pillow
+requests
+# CPU-ONLY versions to save RAM
+--index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1
+torchvision==0.20.1
