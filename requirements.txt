@@ -9,7 +9,8 @@ rasterio
 numpy
 pillow
 requests
-# CPU-ONLY versions to save RAM
---index-url https://download.pytorch.org/whl/cpu
+
+# Tell pip to look at the standard library AND the torch library
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.5.1
 torchvision==0.20.1
