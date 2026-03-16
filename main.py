@@ -33,14 +33,14 @@ try:
         # PRODUCTION: Service Account Auth (Render)
         formatted_key = private_key.replace('\\n', '\n')
         credentials = ee.ServiceAccountCredentials(service_account, key_data=formatted_key)
-        ee.Initialize(credentials, project=ee_project)
+        ee.Initialize(credentials)
         print(f"✅ EE Initialized via Service Account: {service_account}")
     else:
         # LOCAL: Default User Auth
         ee.Initialize(project=ee_project)
         print(f"✅ EE Initialized via Local Auth (Project: {ee_project})")
 except Exception as e:
-    print(f"❌ EE Initialization Error: {e}")
+    print(f"❌ EE Initialization Error 5: {e}")
 
 # --- U-NET MODEL ARCHITECTURE ---
 device = torch.device('cpu') 
